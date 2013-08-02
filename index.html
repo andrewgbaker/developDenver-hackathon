@@ -19,23 +19,22 @@
 		<meta property="og:locale" content="en_US" />
 
 		<title></title>
-
+		<link rel="stylesheet" href="styles.css" />
+		 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="javascript.js"></script>
 	</head>
 	<body>
 
-		<!-- BEGIN: section-main -->
-		<div id="main">
+		<div id="content">
 			
 			<header></header>
 			<h1> Profanity Buffer</h1>
-			<div id="content">
-				<form action="POST">
-					<input type="text" name="phrase" value="Enter Profanity"><br>
-				</form>
-
-			</div>
-
+			<form  id="searchForm">
+			   <input type="text" name="s" placeholder="Search..." />
+			   <input type="submit" value="Search" />
+			  </form>
+			  <!-- the result of the search will be rendered inside this div -->
+			 <div id="result"></div>
 		</div>
-	
 	</body>
 </html>
