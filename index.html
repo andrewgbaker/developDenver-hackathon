@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
@@ -17,24 +18,32 @@
 		<meta property="og:image" content="" />
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content="en_US" />
-
-		<title></title>
-		<link rel="stylesheet" href="styles.css" />
-		 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		
+		<!-- STYLES -->
+		<link href="styles.css" media="all" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="replacetex.js"></script>
 		<script type="text/javascript" src="javascript.js"></script>
+		<title></title>
+
 	</head>
 	<body>
 
-		<div id="content">
-			
-			<header></header>
-			<h1> Profanity Buffer</h1>
-			<form  id="searchForm">
-			   <input type="text" name="s" placeholder="Search..." />
-			   <input type="submit" value="Search" />
-			  </form>
-			  <!-- the result of the search will be rendered inside this div -->
-			 <div id="result"></div>
+		<!-- BEGIN: section-main -->
+		<div id="main">
+			<header><h1><img src="img/logo2.png" alt="rage kicker" /></h1></header>
+			<div id="content">
+				<form id="shit_form">
+					<input type="text" name="phrase" id="textPhrase" value="Enter Phase Profanity"><br>
+					<input type="submit" value="Submit" />
+				</form>
+				
+				<div class="rage_wrap up">
+					<div class="rage_response" >
+						<p id="happy"></p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

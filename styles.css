@@ -1,0 +1,116 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+nav ul { list-style: none }
+blockquote, q { quotes: none }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle }
+label, input[type=button], input[type=submit], button { cursor: pointer }
+
+body {
+	background: #000;
+}
+header {
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+header img {
+	width: 100%;
+	max-width: 100%;
+}
+form {
+	margin: 40px auto;
+	display: block;
+	text-align: center;
+}
+input {
+	margin: 15px auto;
+	height: 100px;
+	width: 500px;
+	font-size: 31px;
+
+}
+
+.rage_wrap {
+	position: absolute;
+	width: 80%;
+	display: block;
+	max-width: 1000px;
+	left: 50%;
+	margin-left: -500px;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	min-height: 700px;
+}
+
+.rage_response {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover !important;
+}
+
+.up {top: -210%;}
+
+.down {top: 250px;}
+
+#rage_response img {
+	width: 100%;
+	max-width: 100%;
+}
+
+#rage_response p {
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	font-size: 68px;
+	text-align: center;
+	padding: 0 20px;
+}
+#happy {
+	width: 100%;
+	font-size: 100px;
+	text-align: center;
+	color: #000;
+	font-family: helvetica;
+	text-shadow: 1px 1px 1px #000;
+	font-weight: bold;
+}
+.close_btn {
+    cursor: pointer;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    right: 0; 
+    }
+.close_btn:after, .close_btn:before {
+      content: "";
+      height: 40px;
+      width: 40px;
+      border-top: 1px solid #fff;
+      position: absolute;
+      top: 14px;
+      right: -16px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg); 
+  }
+.close_btn:before {
+      right: 12px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
